@@ -53,31 +53,31 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 .tab_menu ul li a:hover:before {width:100%;}
 .tab_menu ul li a:before {content:""; width:0; height:2px; background:#000; position:absolute; top:50%; transform:translateY(-50%); left:0; transition:0.3s ease-in-out;}
 
-.tab_menu_img {position:fixed; top:0; left:0; width:55%; height:100%; background:url(../images/tab_bg01.jpg) right center no-repeat; background-size:cover; z-index:200; opacity:0; visibility:hidden; transition:0.5s ease-in-out .5s;}
+.tab_menu_img {position:fixed; top:0; left:0; width:55%; height:100%; background:url(images/tab_bg01.jpg) right center no-repeat; background-size:cover; z-index:200; opacity:0; visibility:hidden; transition:0.5s ease-in-out .5s;}
 .tab_menu_img.on {opacity:1; visibility:visible;}
 .tab_menu_img.off {opacity:0; visibility:hidden;
  -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition:0.5s ease-in-out; }
-.tab_menu_img.change {background:url(../images/tab_bg02.jpg) center center no-repeat; background-size:cover;
+.tab_menu_img.change {background:url(images/tab_bg02.jpg) center center no-repeat; background-size:cover;
 -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition:0.3s ease-in-out; }
-.tab_menu_img.change2 {background:url(../images/tab_bg03.jpg) center center no-repeat; background-size:cover; 
+.tab_menu_img.change2 {background:url(images/tab_bg03.jpg) center center no-repeat; background-size:cover; 
 -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition:0.3s ease-in-out; }
-.tab_menu_img.change3 {background:url(../images/tab_bg04.jpg) center center no-repeat; background-size:cover;
+.tab_menu_img.change3 {background:url(images/tab_bg04.jpg) center center no-repeat; background-size:cover;
 -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition:0.3s ease-in-out; }
 
 
-.main {height:100vh; background:url(../images/navi_bg01.jpg)center center no-repeat; background-size:cover; position:relative;}
+.main {height:100vh; background:url(images/navi_bg01.jpg)center center no-repeat; background-size:cover; position:relative;}
 .main p {position:absolute; top:50%; left:18%; transform:translateY(-50%); font-size:20px; font-weight:bold; color:#000; opacity:0;}
 
 
