@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+<title>Hailey's Portfolio</title>
+<link rel="stylesheet" href="../css/common.css" type="text/css">
+<link rel="stylesheet" href="css/navi_style.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body>
+<div class="header sticky sticky--top js-header">
+	<div class="sns">
+		<a class="cv" href="##" target="_blank">CV</a><a class="github" href="##" target="_blank"><i class="fab fa-github"></i></a><a class="insta" href="##" target="_blank"><i class="fab fa-instagram"></i></a>
+	</div>
+	<div class="bar"><i class="fas fa-bars"></i><em>MENU</em></div>
+</div>
+<div class="side">
+	<p>Name. All Rights Reserved</p>
+</div>
+<div class="tab_menu">
+	<ul>
+		<li class="home"><a href="navi_effect.html">HOME</a></li>
+		<li class="about"><a href="##">ABOUT ME</a></li>
+		<li class="work"><a href="##">WORKS</a></li>
+	</ul>
+</div>
+<div class="tab_menu_img"></div>
+<div class="main">
+	<p>PORTFOLIO</p>
+</div>
+
+<style type="text/css">
+
+</style>
+<script>
+var enlarged=0;
+$('document').ready(function(){
+    $('.bar').on('click', function(){
+        if(enlarged == 0){
+			$('.tab_menu').removeClass('off');
+			$('.tab_menu_img').removeClass('off');
+            $('.tab_menu').addClass('on');
+			$('.tab_menu_img').addClass('on');
+            enlarged=1;
+        }else{
+			$('.tab_menu_img').addClass('off');
+			$('.tab_menu').addClass('off');
+			$('.tab_menu_img').removeClass('on');
+			$('.tab_menu').removeClass('on');
+			enlarged=0;
+			}
+    });
+
+	$('.home').hover(function(){
+		$('.tab_menu_img').toggleClass('change');
+	});
+	$('.about').hover(function(){
+		$('.tab_menu_img').toggleClass('change2');
+	});
+	$('.work').hover(function(){
+		$('.tab_menu_img').toggleClass('change3');
+	});
+
+	TweenMax.to(".main p", 2, {
+            opacity: 1,
+            y: -50,
+            ease: Expo.easeInOut
+      })
+});
+</script>
+
+
+</body>
+</html>
